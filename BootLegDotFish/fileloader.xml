@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<html lang="en">
+<head><title>File Loader</title>
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>file loader</title>
+	<link rel="icon" href="data:"/>
+	<script>
+		document.addEventListener(
+				'DOMContentLoaded',
+				() =&gt; {
+					if (['https:', 'http:', 'file:'].includes(window.location.protocol)) {
+						document.body.innerHTML = '&lt;h1&gt;Upload your file here&lt;/h1&gt;&lt;h3&gt;You are using the https: version&lt;/h3&gt;&lt;h3&gt;This tool was made by zumbiepig&lt;/h3&gt;';
+						document.body.appendChild(
+							Object.assign(document.createElement('input'), {
+								type: 'file',
+								accept: 'text/html',
+								onchange: (event) =&gt; {
+									Object.assign(new FileReader(), {
+										onload: (event) =&gt; {
+											document.documentElement.innerHTML = event.target.result;
+											document.querySelectorAll('script').forEach((script) =&gt; {
+												const newScript = document.createElement('script');
+												Array.from(script.attributes).forEach((attr) =&gt; {
+													newScript.setAttribute(attr.name, attr.value);
+												});
+												newScript.innerHTML = script.innerHTML;
+												script.parentNode.replaceChild(newScript, script);
+											});
+											document.dispatchEvent(new Event('DOMContentLoaded'));
+											document.dispatchEvent(new Event('load'));
+										},
+									}).readAsText(event.target.files[0]);
+								},
+							})
+						);
+					} else if (['file:', 'data:', 'blob:'].includes(window.location.protocol)) {
+						document.body.innerHTML = '&lt;h1&gt;Upload your file here&lt;/h1&gt;&lt;h3&gt;You are using the blob: version&lt;/h3&gt;&lt;h3&gt;This tool was made by zumbiepig&lt;/h3&gt;';
+						document.body.appendChild(
+							Object.assign(document.createElement('input'), {
+								type: 'file',
+								accept: 'text/html',
+								onchange: (event) =&gt; {
+									if (confirm('WARNING: Your worlds WILL NOT save using this method.\nAre you sure you want to continue?')) {
+										window.location.href = URL.createObjectURL(event.target.files[0]);
+									}
+								},
+							})
+						);
+					} else {
+						document.body.innerHTML = `&lt;h1&gt;Unsupported protocol, check console for details&lt;/h1&gt;&lt;h2&gt;This tool was made by zumbiepig&lt;/h2&gt;`;
+						console.error('Unsupported protocol: ' + window.location.protocol);
+					}
+				},
+				{ once: true }
+			);
+	</script>
+
+
+</head></html>
