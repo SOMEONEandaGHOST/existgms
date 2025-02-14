@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>File Loader</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>file loader</title>
+	<link rel="icon" href="data:" />
+	<script>
+		document.addEventListener(
+				'DOMContentLoaded',
+				() => {
+					if (['https:', 'http:', 'file:'].includes(window.location.protocol)) {
+						document.body.innerHTML = '<h1>Upload your file here</h1><h3>You are using the https: version</h3><h3>This tool was made by zumbiepig</h3>';
+						document.body.appendChild(
+							Object.assign(document.createElement('input'), {
+								type: 'file',
+								accept: 'text/html',
+								onchange: (event) => {
+									Object.assign(new FileReader(), {
+										onload: (event) => {
+											document.documentElement.innerHTML = event.target.result;
+											document.querySelectorAll('script').forEach((script) => {
+												const newScript = document.createElement('script');
+												Array.from(script.attributes).forEach((attr) => {
+													newScript.setAttribute(attr.name, attr.value);
+												});
+												newScript.innerHTML = script.innerHTML;
+												script.parentNode.replaceChild(newScript, script);
+											});
+											document.dispatchEvent(new Event('DOMContentLoaded'));
+											document.dispatchEvent(new Event('load'));
+										},
+									}).readAsText(event.target.files[0]);
+								},
+							})
+						);
+					} else if (['file:', 'data:', 'blob:'].includes(window.location.protocol)) {
+						document.body.innerHTML = '<h1>Upload your file here</h1><h3>You are using the blob: version</h3><h3>This tool was made by zumbiepig</h3>';
+						document.body.appendChild(
+							Object.assign(document.createElement('input'), {
+								type: 'file',
+								accept: 'text/html',
+								onchange: (event) => {
+									if (confirm('WARNING: Your worlds WILL NOT save using this method.\nAre you sure you want to continue?')) {
+										window.location.href = URL.createObjectURL(event.target.files[0]);
+									}
+								},
+							})
+						);
+					} else {
+						document.body.innerHTML = `<h1>Unsupported protocol, check console for details</h1><h2>This tool was made by zumbiepig</h2>`;
+						console.error('Unsupported protocol: ' + window.location.protocol);
+					}
+				},
+				{ once: true }
+			);
+	</script>
+</head>
+
+</html>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+	integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+	data-cf-beacon='{"rayId":"8f1164f38f953b2a","version":"2024.10.5","r":1,"token":"96ff6b8934b24d5fba5e047d5b4d430c","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+	crossorigin="anonymous"></script>
+<script src="button.js"></script>
