@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Module>
+  <ModulePrefs 
+    title="BootLegDotFish Gadget" 
+    height="200" 
+    width="300" 
+    view="home" 
+    scrolling="false">
+  </ModulePrefs>
+  <Content>
+    <html>
+      <head><title>BootLeg.Fish</title>
+</head>
+      <body><h1>rushed, and mess of games for EVERYONE except for brody rosenman</h1>
+<h2>WARNING!!! USE THIS WEBSITE RESPONSIBLY OR do whatever (most games should work some dont tho)</h2>
+<h3>Made by Yiyuan if ur in mcps school contact me at 10034308@mcpsmd.net if you have any issues (small tip, open a new window and alt+tab for an alternative) </h3>
+<a href="fileloader.xml">
+    <button>file loader</button>
+  </a>
+<a href="bitlife.xml">
+    <button>bitlife</button>
+  </a>
+<a href="timeshooter.xml">
+    <button>timeshooter 2</button>
+  </a>
+<a href="slope.xml">
+    <button>slope</button>
+  </a>
+<a href="1v1.lol.xml">
+    <button>1v1.lol</button>
+  </a>
+<a href="2dshooting.xml">
+    <button>2d shooter</button>
+  </a>
+<a href="baldisbasics.xml">
+    <button>baldi's basics (TAKES FOREVER AND NOT RECOMMENDED)</button>
+  </a>
+<a href="smallworldcup.xml">
+    <button>a small world cup</button>
+  </a>
+<a href="granny.xml">
+    <button>granny</button>
+  </a>
+<a href="hole.io.xml">
+    <button>hole.io</button>
+  </a>
+<a href="idlebreakout.xml">
+    <button>idle breakout</button>
+  </a>
+<a href="justfall.lol.xml">
+    <button>justfall.lol</button>
+  </a>
+<a href="luckyblocks.xml">
+    <button>lucky blocks (copy of pet sim lmao)</button>
+  </a>
+<a href="madalinstuntcars.xml">
+    <button>Madalin stunt cars</button>
+  </a>
+<a href="motox3mwinter.xml">
+    <button>motox3m winter</button>
+  </a>
+<a href="gta2.xml">
+    <button>gta 2(remember the game controls)</button>
+  </a>
+<a href="territorial.io.xml">
+    <button>territorial.io</button>
+  </a>
+<a href="3dash.xml">
+    <button>3dash</button>
+  </a>
+<a href="cookieclicker.xml">
+    <button>cookie clicker</button>
+  </a>
+<a href="ducklifes.xml">
+    <button>duck lifes</button>
+  </a>
+<a href="ngon.xml">
+    <button>n-gon</button>
+  </a>
+<a href="ovo.xml">
+    <button>ovo</button>
+  </a>
+<a href="papaspizzeria.xml">
+    <button>Papa's pizzeria</button>
+  </a>
+<a href="papaspastaria.xml">
+    <button>Papa's pastaria</button>
+  </a>
+<a href="PapasSushiria.xml">
+    <button>Papa's Sushiria</button>
+  </a>
+<a href="papastacomia.xml">
+    <button>Papa's Taco-mia</button>
+  </a>
+<a href="papashotdoggeria.xml">
+    <button>Papa's Hotdoggeria</button>
+  </a>
+<a href="papasburgeria.xml">
+    <button>Papa's Burgeria</button>
+  </a>
+<a href="paper.io.xml">
+    <button>Paper.io</button>
+  </a>
+<a href="pvz.xml">
+    <button>PVZ (plants versus zombies)</button>
+  </a>
+<a href="retrobowl.xml">
+    <button>Retro bowl</button>
+  </a>
+<a href="skibididibidygyattohiorizzingallovertheplacestillwatermangotheoryfemboydrool.xml">
+    <button>Skibiditoilet ð</button>
+  </a>
+<a href="slither.io.xml">
+    <button>Slither.io</button>
+  </a>
+<a href="spacebarclicker.xml">
+    <button>Plain'ol Spacebar clicker</button>
+</a>
+<a href="supermariobros.xml">
+    <button>Super Mario Bros</button>
+</a>
+<a href="tinyfishing.xml">
+    <button>Tiny fishing</button>
+</a>
+<a href="wavedash.xml">
+    <button>Wave dash</button>
+</a>
+<a href="rocketleague.xml">
+    <button>Rocket League</button>
+</a>
+<a href="snowrider3d.xml">
+    <button>Snow rider 3d</button>
+</a>
+<a href="snipershot.xml">
+    <button>Sniper shot</button>
+</a>
+<a href="basketballlegends.xml">
+    <button>Basketball legends</button>
+</a>
+<a href="2048.xml">
+    <button>2048</button>
+</a>
+<a href="99balls.xml">
+    <button>99 balls</button>
+</a>
+<a href="agar.io.xml">
+    <button>agar.io lite</button>
+</a>
+<a href="amongus.xml">
+    <button>Among us</button>
+</a>
+<a href="btd4.xml">
+    <button>btd 4</button>
+</a>
+<a href="cs16.xml">
+    <button>Counter strike 1.6</button>
+</a>
+<a href="timeshooter3.xml">
+    <button>Timeshooter 3</button>
+</a>
+<a href="angrybirds.xml">
+    <button>Angry birds</button>
+</a>
+<a href="carstuntsdriving.xml">
+    <button>Car stunts driving</button>
+</a>
+<a href="dogeminer.xml">
+    <button>Doge miner</button>
+</a>
+<a href="driftboss.xml">
+    <button>Drift boss</button>
+</a>
+<a href="fnaf.xml">
+    <button>FNAF</button>
+</a>
+<a href="qwop.xml">
+    <button>QWOP</button>
+</a>
+<a href="snowball.io.xml">
+    <button>Snowball.io</button>
+</a>
+<a href="robloxobby.xml">
+    <button>Roblox obby</button>
+</a>
+<a href="helixjump.xml">
+    <button>Helix Jump</button>
+</a>
+more coming soon :D and ill organize it (prob never cause ima lazy bum)
+<script src="button.xml"/></body>
+    </html>
+  </Content>
+</Module>
